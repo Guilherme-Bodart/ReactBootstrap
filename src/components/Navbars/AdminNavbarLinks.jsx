@@ -4,27 +4,29 @@ import { NavLink } from "react-router-dom";
 
 class AdminNavbarLinks extends Component {
   render() {
-    
+  
     return (
       <div>
-        <Navbar bsPrefix="navbar" bg="dark" variant="dark">
+        <Navbar bsPrefix="navbar">
+          
         <Navbar.Brand className='logo' href="#home">MPT-Devices</Navbar.Brand>
+   
         
-        <Nav className="ml-auto" bsPrefix="navbar-expand">   
-        <tr><Nav.Link  href="#home">Home</Nav.Link></tr>
-        <tr><Nav.Link href="#features">Features</Nav.Link></tr>
-        <tr><Nav.Link href="#pricing">Pricing</Nav.Link></tr>      
+        <Nav className="ml-auto">   
+        <Nav.Link><tr className="menu" href="#home">Home</tr></Nav.Link>
+        <Nav.Link><tr className="menu" href="#features">Features</tr></Nav.Link>
+        <Nav.Link><tr className="menu" href="#pricing">Pricing</tr></Nav.Link>    
         </Nav>
        
         <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-info">Search</Button>
+            <FormControl size="sm" type="text" placeholder="Search" />
+            <Button variant="outline-info">Procurar</Button>
         </Form>        
-        <tr><NavLink to={"/admin/login"} >
+        <NavLink to={"/admin/login"} >
           <Button
           variant="outline-primary"
-                >
-          Sair</Button></NavLink></tr>  
+          >Deslogar
+          </Button></NavLink>  
     </Navbar>
       </div>
     );

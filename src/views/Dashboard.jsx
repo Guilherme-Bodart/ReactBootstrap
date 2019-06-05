@@ -1,24 +1,8 @@
 import React, { Component } from "react";
-import ChartistGraph from "react-chartist";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Card } from "components/Card/Card.jsx";
-import { StatsCard } from "components/StatsCard/StatsCard.jsx";
-import ControlledCarousel from '../components/todo/ControlledCarousel'
 import TodoList from '../components/todo/todoList.jsx'
-import { Tasks } from "components/Tasks/Tasks.jsx";
-import {
-  dataPie,
-  legendPie,
-  dataSales,
-  optionsSales,
-  responsiveSales,
-  legendSales,
-  dataBar,
-  optionsBar,
-  responsiveBar,
-  legendBar
-} from "variables/Variables.jsx";
 
 class Dashboard extends Component {
   createLegend(json) {
@@ -37,12 +21,17 @@ class Dashboard extends Component {
         <Container fluid>
           <Row>
             <Col >
-              <StatsCard
-                bigIcon={<i className="pe-7s-server text-warning" />}
-                statsText="Capacity"
-                statsValue="105GB"
-                statsIcon={<i className="fa fa-refresh" />}
-                statsIconText="Updated now"
+            <Card
+                title="Perfil do Usuário"
+                category="usuário"
+                stats="Updated 3 minutes ago"
+                statsIcon="fa fa-history"
+                content={
+                  <div className="table-full-width">
+                    <table className="table">
+                    </table>
+                  </div>
+                }
               />
             </Col>
             

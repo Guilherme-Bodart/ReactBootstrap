@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import { Navbar,Button,FormControl,Form, Nav} from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Navbar} from "react-bootstrap";
 
 class AdminNavbarLogin extends Component {
   render() {
     
     return (
       <div>
-        <Navbar bsPrefix="navbar" bg="dark" variant="dark">
-        <Navbar.Brand className='logo' href="#home">MPT-Devices</Navbar.Brand>
-    </Navbar>
+        <Navbar bsPrefix="navbar">
+          <Navbar.Brand className='logo' href="#home">MPT-Devices</Navbar.Brand>
+        </Navbar>
       </div>
     );
   }

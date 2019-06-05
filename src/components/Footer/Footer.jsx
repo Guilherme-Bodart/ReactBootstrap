@@ -8,7 +8,7 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <Container fluid>
-          <Navbar>
+          <Navbar className="footer">
           <Navbar.Brand className="copyright" href="#pablo">Home</Navbar.Brand>
           <Navbar.Brand className="copyright" href="#pablo">Company</Navbar.Brand>
           <Navbar.Brand className="copyright" href="#pablo">Portfolio</Navbar.Brand>
