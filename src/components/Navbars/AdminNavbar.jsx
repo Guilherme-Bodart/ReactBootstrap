@@ -6,7 +6,7 @@ class Header extends Component {
  
   render() {
     return (         
-      <AdminNavbarLinks />      
+      <AdminNavbarLinks {...this.props} />      
     )
   }
 }

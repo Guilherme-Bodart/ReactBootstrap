@@ -1,7 +1,6 @@
 import Dashboard from "views/Dashboard.jsx";
 import UserProfile from "views/UserProfile.jsx";
 import TableList from "views/TableList.jsx";
-import Typography from "views/Typography.jsx";
 import Icons from "views/Icons.jsx";
 import Maps from "views/Maps.jsx";
 import Notifications from "views/Notifications.jsx";
@@ -31,8 +30,8 @@ const dashboardRoutes = [
   },
 
   {
-    path: "/icons",
-    name: "Icons",
+    path: "/controle",
+    name: "Controle",
     icon: "pe-7s-science",
     component: Icons,
     layout: "/admin"
@@ -51,14 +50,6 @@ const dashboardRoutes = [
     component: Notifications,
     layout: "/admin"
   },
-  {
-    upgrade: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "pe-7s-rocket",
-    component: Upgrade,
-    layout: "/admin"
-  }
 ];
 
 export default dashboardRoutes;

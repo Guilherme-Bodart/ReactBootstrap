@@ -4,7 +4,6 @@ import NotificationSystem from "react-notification-system";
 
 import AdminNavbar from "components/Navbars/AdminNavbarLogin";
 import Footer from "components/Footer/Footer";
-import Sidebar from "components/Sidebar/Sidebar";
 import Container from "react-bootstrap/Container"
 
 import { style } from "variables/Variables.jsx";

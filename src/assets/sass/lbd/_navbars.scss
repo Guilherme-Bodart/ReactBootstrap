@@ -12,7 +12,8 @@
     font-size: $font-size-navbar;
     border-radius: 0;
     
-    background-color: #801010;
+    background-image: linear-gradient(to right, #8c8c8c, #801010);
+        
     
     .navbar-brand {
         font-weight: $font-weight-normal;
@@ -317,3 +318,6 @@
 }
 
 
+.FormProcura{
+    margin-left:10px;
+}

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Image from 'react-bootstrap/Image'
+import controle from "assets/img/controle-ar.png";
 
-import Card from "components/Card/Card";
-import { iconsArray } from "variables/Variables.jsx";
 
 class Icons extends Component {
   render() {
@@ -10,44 +10,15 @@ class Icons extends Component {
       <div className="content">
         <Container fluid>
           <Row>
-            <Col md={12}>
-              <Card
-                title="202 Awesome Stroke Icons"
-                ctAllIcons
-                category={
-                  <span>
-                    Handcrafted by our friends from{" "}
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="http://themes-pixeden.com/font-demos/7-stroke/index.html"
-                    >
-                      Pixeden
-                    </a>
-                  </span>
-                }
-                content={
-                  <Row>
-                    {iconsArray.map((prop, key) => {
-                      return (
-                        <Col
-                          lg={2}
-                          md={3}
-                          sm={4}
-                          xs={6}
-                          className="font-icon-list"
-                          key={key}
-                        >
-                          <div className="font-icon-detail">
-                            <i className={prop} />
-                            <input type="text" defaultValue={prop} />
-                          </div>
-                        </Col>
-                      );
-                    })}
-                  </Row>
-                }
-              />
+            <Col md="12">Ae</Col>
+            <Col md="12">Ae</Col>
+            <Col md="12">Ae</Col>
+            <Col md="12">Ae</Col>
+            <Col md="12">Ae</Col>
+            <Col md="12">Ae</Col>
+            <Col md="12">Ae</Col>
+            <Col md={{ offset: 4}}>
+              <Image src={controle}  />
             </Col>
           </Row>
         </Container>

@@ -19,7 +19,7 @@ export class Card extends Component {
         >
           {this.props.content}
 
-          <div className="footer">
+          <div >
             {this.props.legend}
             {this.props.stats != null ? <hr /> : ""}
             <div className="stats">

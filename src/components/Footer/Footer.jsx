@@ -7,7 +7,6 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <Container fluid>
           <Navbar className="footer">
           <Navbar.Brand className="copyright" href="#pablo">Home</Navbar.Brand>
           <Navbar.Brand className="copyright" href="#pablo">Company</Navbar.Brand>
@@ -22,7 +21,6 @@ class Footer extends Component {
             , made with love for a better web
           </p>
           </Navbar>
-        </Container>
       </footer>
     );
   }

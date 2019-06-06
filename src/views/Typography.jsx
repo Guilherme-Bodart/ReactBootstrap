@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Container,Button,Form } from "react-bootstrap";
-import { Route, Redirect, NavLink } from "react-router-dom";
-import AdminLayout from "layouts/Admin.jsx";
-
+import { NavLink } from "react-router-dom";
 
 class Typography extends Component {
   render() {
