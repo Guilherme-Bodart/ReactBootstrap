@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import { Navbar} from "react-bootstrap";
+import { Navbar,Image} from "react-bootstrap";
+import title from '../../assets/img/Title4.png'
 
 class AdminNavbarLogin extends Component {
   render() {
     
     return (
       <div>
-        <Navbar bsPrefix="navbar">
-          <Navbar.Brand className='logo' href="#home">MPT-Devices</Navbar.Brand>
+        <Navbar className="navbarLogin">
+          <Image src={title} className="imglogo"/>
         </Navbar>
       </div>
     );

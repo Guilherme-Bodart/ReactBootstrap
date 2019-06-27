@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Image from 'react-bootstrap/Image'
-import controle from "assets/img/controle-ar.png";
+import { Container, Form, Col, Button,Row } from "react-bootstrap";
 
 
 class Icons extends Component {
@@ -9,18 +7,57 @@ class Icons extends Component {
     return (
       <div className="content">
         <Container fluid>
-          <Row>
-            <Col md="12">Ae</Col>
-            <Col md="12">Ae</Col>
-            <Col md="12">Ae</Col>
-            <Col md="12">Ae</Col>
-            <Col md="12">Ae</Col>
-            <Col md="12">Ae</Col>
-            <Col md="12">Ae</Col>
-            <Col md={{ offset: 4}}>
-              <Image src={controle}  />
+          <Form>
+            <Form.Label>Dados Pessoais</Form.Label>
+            <br />
+            <br />
+            <Form.Row>
+                <Col md={1}>
+                  Login
+                </Col>
+                <Col md={{ span: 5, offset: 2 }}>
+                <Form.Control type="Login" placeholder="Login" />
+                </Col>
+            </Form.Row>
+            <br/>
+
+            <Form.Row>
+                <Col md={1}>
+                  Senha
+                </Col>
+                <Col md={{ span: 5, offset: 2 }}>
+                <Form.Control type="senha" placeholder="Senha" />
+                </Col>
+            </Form.Row>
+            <br/>
+
+            <Form.Row>
+                <Col md={1}>
+                  Email
+                </Col>
+                <Col md={{ span: 5, offset: 2 }}>
+                <Form.Control type="Email" placeholder="E-mail" />
+                </Col>
+            </Form.Row>
+            <br/>
+            <Form.Row>
+                <Col md={1}>
+                  Nascimento
+                </Col>
+                <Col md={{ span: 5, offset: 2 }}>
+                <Form.Control type="nascimento" placeholder="Nascimento" />
+                </Col>
+            </Form.Row>
+            <br/>
+
+
+            <Col md={{ offset: 9 }}>
+            <Button variant="primary" type="submit">
+              Avançar
+            </Button>
             </Col>
-          </Row>
+          </Form>
+
         </Container>
       </div>
     );

@@ -5,6 +5,9 @@ import NotificationSystem from "react-notification-system";
 import AdminNavbar from "components/Navbars/AdminNavbarLogin";
 import Footer from "components/Footer/Footer";
 import Container from "react-bootstrap/Container"
+import Image from 'react-bootstrap/Image'
+import background from '../assets/img/background.jpg'
+
 
 import { style } from "variables/Variables.jsx";
 
@@ -59,17 +62,18 @@ class AdminLogin extends Component {
   
   render() {
     return (
-      <Container fluid>
+      <div> 
+      <Image src={background}/>
         <NotificationSystem ref="notificationSystem" style={style} />
-        <div id="main-panel" className="main-panel" ref="mainPanel">
-          <AdminNavbar
+        <div id="main-panel" className="main-panel2" ref="mainPanel">
+          <AdminNavbar className="login-navbar"
             {...this.props}
             brandText={this.getBrandText(this.props.location.pathname)}
           />
           <Switch>{this.getRoutes(routes)}</Switch>
           <Footer />
         </div>
-      </Container>
+      </div>
     );
   }
 }

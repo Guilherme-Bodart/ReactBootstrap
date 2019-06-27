@@ -8,15 +8,11 @@ class Footer extends Component {
     return (
       <footer className="footer">
           <Navbar className="footer">
-          <Navbar.Brand className="copyright" href="#pablo">Home</Navbar.Brand>
-          <Navbar.Brand className="copyright" href="#pablo">Company</Navbar.Brand>
-          <Navbar.Brand className="copyright" href="#pablo">Portfolio</Navbar.Brand>
-          <Navbar.Brand className="copyright" href="#pablo">Blog</Navbar.Brand>
                          
           <p className="copyright ml-auto">
             &copy; {new Date().getFullYear()}{" "}
             <a href="http://www.creative-tim.com?ref=lbr-footer">
-              Creative Tim
+              CyperPunk3003
             </a>
             , made with love for a better web
           </p>
